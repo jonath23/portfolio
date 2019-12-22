@@ -30,7 +30,25 @@
 
         <v-layout justify-center>
           <a
-            v-for="(next, i) in completedProjects"
+            v-for="(next, i) in completedVueProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-3"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex
+        mb-5
+        xs12
+      >
+        <h2 class="headline font-weight-bold mb-3">My Vanilla JS games</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedJSProjects"
             :key="i"
             :href="next.href"
             class="subheading mx-3"
@@ -97,8 +115,13 @@ export default {
         text: 'My Github Account',
         href: 'https://github.com/jonath23',
       }
+      ,
+      {
+        text: 'My Oracle Certified Associate, Java SE8 Programmer',
+        href: 'https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2',
+      }
     ],
-    completedProjects: [
+    completedVueProjects: [
       {
         text: 'Yoni\'s Waffles',
         href: 'https://yonis-waffles.firebaseapp.com/',
@@ -111,7 +134,21 @@ export default {
         text: 'Programmers World Wide',
         href: 'https://ww-programmers.firebaseapp.com/',
       },
-    ],
+    ],   
+    completedJSProjects: [
+      {
+        text: 'Snake Game',
+        href: 'https://yoniwitz.github.io/JS-Snake/Snake/snake.html',
+      },
+      {
+        text: 'Ping Pong Game',
+        href: 'https://yoniwitz.github.io/JS-Snake/Pong/pong.html',
+      },
+      {
+        text: 'Tetris',
+        href: 'https://yoniwitz.github.io/JS-Tetris/views/tetris.html',
+      },
+    ]
   })
 };
 </script>
