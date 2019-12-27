@@ -26,14 +26,14 @@
         mb-5
         xs12
       >
-        <h2 class="headline font-weight-bold mb-3">I've recently completed 3 apps in Vue:</h2>
+        <h2 class="headline font-weight-bold mb-3">I've recently completed 4 apps in Vue:</h2>
 
         <v-layout justify-center>
           <a
             v-for="(next, i) in completedVueProjects"
             :key="i"
             :href="next.href"
-            class="subheading mx-3"
+            class="subheading mx-4"
             target="_blank"
           >
             {{ next.text }}
@@ -134,19 +134,19 @@ export default {
         text: 'Programmers World Wide',
         href: 'https://ww-programmers.firebaseapp.com/',
       },
+      {
+        text: 'Expense Tracker (deployed on Heroku)',
+        href: 'http://yw-expense-tracker.herokuapp.com/',
+      },
     ],   
     completedJSProjects: [
       {
         text: 'Snake Game',
-        href: 'https://yoniwitz.github.io/JS-Snake/Snake/snake.html',
-      },
-      {
-        text: 'Ping Pong Game',
-        href: 'https://yoniwitz.github.io/JS-Snake/Pong/pong.html',
+        href: 'https://yoniwitz.github.io/JS-Snake/',
       },
       {
         text: 'Tetris',
-        href: 'https://yoniwitz.github.io/JS-Tetris/views/tetris.html',
+        href: 'https://yoniwitz.github.io/JS-Tetris/',
       },
     ]
   })
