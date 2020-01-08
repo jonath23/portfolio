@@ -83,7 +83,7 @@
         mb-5
       >
         <h2 class="headline font-weight-bold mb-3">Courrent Project</h2>
-        <p>I'm currently developing a WordPress plugin. Vue in the front end</p>
+        <p>I'm currently developing a Full Stack project. Vue.js in the Front End and Express.js in the Back End</p>
 
         <v-layout justify-center>
           <a
@@ -113,7 +113,7 @@ export default {
       },
       {
         text: 'My Github Account',
-        href: 'https://github.com/jonath23',
+        href: 'https://github.com/yoniwitz',
       }
       ,
       {
