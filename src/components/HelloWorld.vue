@@ -44,6 +44,25 @@
         mb-5
         xs12
       >
+
+      <h2 class="headline font-weight-bold mb-3">Several in React:</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedReactProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex
+        mb-5
+        xs12
+      >
         <h2 class="headline font-weight-bold mb-3">My Vanilla JS games</h2>
 
         <v-layout justify-center>
@@ -138,6 +157,16 @@ export default {
         text: 'Expense Tracker (deployed on Heroku)',
         href: 'http://yw-expense-tracker.herokuapp.com/',
       },
+    ],  
+    completedReactProjects: [
+      {
+        text: 'Meme Generator',
+        href: 'https://yoniwitz.github.io/Meme-Generator/',
+      },
+      {
+        text: 'Expense Tracker (deployed on Heroku)',
+        href: 'https://yoni-chat.firebaseapp.com/',
+      }
     ],   
     completedJSProjects: [
       {
