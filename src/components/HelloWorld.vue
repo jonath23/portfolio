@@ -165,7 +165,7 @@ export default {
       },
       {
         text: 'Expense Tracker (deployed on Heroku)',
-        href: 'https://yoni-chat.firebaseapp.com/',
+        href: 'http://yw-expense-tracker-react.herokuapp.com/',
       }
     ],   
     completedJSProjects: [
