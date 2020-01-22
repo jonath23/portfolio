@@ -8,8 +8,11 @@ Show casing my projects and other software relevant information
 
 ## Summary
 
-With the new year approaching, I'd like to expand my profile which describes my programming skills to include wider and diverse capabilities. Ultimately, my goal is to land a job which incorporates these multiple skills. I would also like to demonstrate my abilities and wide knowledge of the craft. 
-Therefore, I have begun revising the site and adding apps to my GitHub repo. 
+I began participating in a 'Software Development Mastermind' mentorship program towards the end of 2019. The purpose of the program is to strengthen and expand my skills as a Full Stack developer. The completed work is showcased on my GitHub and portfolio/personal website.
+
+This is my portfolio website which I built myself. 
+
+My ultimate goal is to land a job that incorporates my skills and utilizes my abilities and outgoing personality. So if you enjoyed reviewing my code as much as I did writing it, please find me on one of the links provided below.
 
 ## Author
 
