@@ -26,7 +26,26 @@
         mb-5
         xs12
       >
-        <h2 class="headline font-weight-bold mb-3">I've recently completed 4 apps in Vue:</h2>
+
+      <h2 class="headline font-weight-bold mb-3">I've recently completed 2 Full Stack apps: (Node in the Back End, Vue/React in the Front End)</h2>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedFullStackProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex
+        mb-5
+        xs12
+      >
+        <h2 class="headline font-weight-bold mb-3">4 apps in Vue:</h2>
 
         <v-layout justify-center>
           <a
@@ -140,6 +159,16 @@ export default {
         href: 'https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2',
       }
     ],
+    completedFullStackProjects: [
+      {
+        text: 'Photos Viewer',
+        href: 'https://photos-viewer.herokuapp.com/',
+      },
+      {
+        text: 'Twitter Showcase',
+        href: 'https://yw-twitter-showcase.herokuapp.com/',
+      }
+    ],  
     completedVueProjects: [
       {
         text: 'Yoni\'s Waffles',
@@ -173,10 +202,10 @@ export default {
         text: 'Snake Game',
         href: 'https://yoniwitz.github.io/JS-Snake/',
       },
-      {
-        text: 'Tetris',
-        href: 'https://yoniwitz.github.io/JS-Tetris/',
-      },
+      // {
+      //   text: 'Tetris',
+      //   href: 'https://yoniwitz.github.io/JS-Tetris/',
+      // },
     ]
   })
 };
