@@ -45,7 +45,7 @@
         mb-5
         xs12
       >
-        <h2 class="headline font-weight-bold mb-3">4 apps in Vue:</h2>
+        <h2 class="headline font-weight-bold mb-3">3 apps in Vue:</h2>
 
         <v-layout justify-center>
           <a
@@ -173,10 +173,6 @@ export default {
       {
         text: 'Yoni\'s Waffles',
         href: 'https://yonis-waffles.firebaseapp.com/',
-      },
-      {
-        text: 'Yoni Chat',
-        href: 'https://yoni-chat.firebaseapp.com/',
       },
       {
         text: 'Programmers World Wide',
