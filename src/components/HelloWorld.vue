@@ -123,7 +123,7 @@
         <h2 class="headline font-weight-bold mb-3">Courrent Project</h2>
         <p>I'm currently developing a Full Stack project. Vue.js in the Front End and Express.js in the Back End</p>
 
-        <v-layout justify-center>
+        <!-- <v-layout justify-center>
           <a
             v-for="(eco, i) in currentProjects"
             :key="i"
@@ -133,7 +133,7 @@
           >
             {{ eco.text }}
           </a>
-        </v-layout>
+        </v-layout> -->
       </v-flex>
     </v-layout>
   </v-container>
