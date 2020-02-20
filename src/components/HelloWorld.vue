@@ -27,7 +27,7 @@
         xs12
       >
 
-      <h2 class="headline font-weight-bold mb-3">I've recently completed 2 Full Stack apps: (Node in the Back End, Vue/React in the Front End)</h2>
+      <h2 class="headline font-weight-bold mb-3">I've recently completed 3 Full Stack apps: (one ASP.Net, 2 Node in the Back End and Vue/React in the Front End)</h2>
 
         <v-layout justify-center>
           <a
@@ -64,7 +64,7 @@
         xs12
       >
 
-      <h2 class="headline font-weight-bold mb-3">Several in React:</h2>
+      <h2 class="headline font-weight-bold mb-3">Few in React:</h2>
 
         <v-layout justify-center>
           <a
@@ -116,14 +116,14 @@
         </v-layout>
       </v-flex>
 
-      <v-flex
+  <!--     <v-flex
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Courrent Project</h2>
+        <h2 class="headline font-weight-bold mb-3">Current Project</h2>
         <p>I'm currently developing a Full Stack project. Vue.js in the Front End and Express.js in the Back End</p>
 
-        <!-- <v-layout justify-center>
+        <v-layout justify-center>
           <a
             v-for="(eco, i) in currentProjects"
             :key="i"
@@ -133,8 +133,8 @@
           >
             {{ eco.text }}
           </a>
-        </v-layout> -->
-      </v-flex>
+        </v-layout>
+      </v-flex> -->
     </v-layout>
   </v-container>
 </template>
@@ -160,6 +160,10 @@ export default {
       }
     ],
     completedFullStackProjects: [
+      {
+        text: 'Simple Bank App',
+        href: 'https://ywsimplebank.azurewebsites.net/',
+      },
       {
         text: 'Photos Viewer',
         href: 'https://photos-viewer.herokuapp.com/',
@@ -198,10 +202,10 @@ export default {
         text: 'Snake Game',
         href: 'https://yoniwitz.github.io/JS-Snake/',
       },
-      // {
-      //   text: 'Tetris',
-      //   href: 'https://yoniwitz.github.io/JS-Tetris/',
-      // },
+      {
+        text: 'Tetris',
+        href: 'https://yoniwitz.github.io/JS-Tetris/',
+      }
     ]
   })
 };
