@@ -27,7 +27,7 @@
         xs12
       >
 
-      <h2 class="headline font-weight-bold mb-3">I've recently completed 3 Full Stack apps: (one ASP.Net, 2 Node in the Back End and Vue/React in the Front End)</h2>
+      <h2 class="headline font-weight-bold mb-3">I've recently completed 4 Full Stack apps: (one Spring Boot Java, one ASP.Net, 2 Node in the Back End and Vue/React in the Front End)</h2>
 
         <v-layout justify-center>
           <a
@@ -161,7 +161,11 @@ export default {
     ],
     completedFullStackProjects: [
       {
-        text: 'Simple Bank App',
+        text: 'Das Boot (Spring Boot Java)',
+        href: 'https://yw-das-boot.herokuapp.com/index.html#/',
+      },
+      {
+        text: 'Simple Bank App (.Net stack)',
         href: 'https://ywsimplebank.azurewebsites.net/',
       },
       {
