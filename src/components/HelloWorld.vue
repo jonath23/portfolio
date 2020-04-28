@@ -210,7 +210,7 @@ export default {
         href: "https://ww-programmers.firebaseapp.com/",
       },
       {
-        text: "Expense Tracker (deployed on Heroku)",
+        text: "Expense Tracker",
         href: "http://yw-expense-tracker.herokuapp.com/",
       },
     ],
@@ -220,7 +220,7 @@ export default {
         href: "https://yoniwitz.github.io/Meme-Generator/",
       },
       {
-        text: "Expense Tracker (deployed on Heroku)",
+        text: "Expense Tracker",
         href: "http://yw-expense-tracker-react.herokuapp.com/",
       },
     ],
