@@ -1,9 +1,6 @@
 <template>
   <v-container>
-    <v-layout
-      text-center
-      wrap
-    >
+    <v-layout text-center wrap>
       <v-flex xs12>
         <v-img
           :src="require('../assets/0.jpg')"
@@ -18,20 +15,20 @@
           Welcome to Yoni's website
         </h1>
         <p class="subheading font-weight-regular">
-          Here's where I'll be sharing my latest completed work and keep you posted on my current projects
+          Here's where I'll be sharing my latest completed work and keep you
+          posted on my current projects
         </p>
       </v-flex>
 
-      <v-flex
-        mb-5
-        xs12
-      >
-
-      <h2 class="headline font-weight-bold mb-3">I've recently completed 4 Full Stack apps: (one Spring Boot Java, one ASP.Net, 2 Node in the Back End and Vue/React in the Front End)</h2>
+      <v-flex mb-5 xs12>
+        <h2 class="headline font-weight-bold mb-3">
+          I've recently completed several Full Stack apps:
+        </h2>
+        <h3 class="headline font-weight-bold mb-3">ASP.Net (C#)</h3>
 
         <v-layout justify-center>
           <a
-            v-for="(next, i) in completedFullStackProjects"
+            v-for="(next, i) in completedFullStackNetProjects"
             :key="i"
             :href="next.href"
             class="subheading mx-4"
@@ -41,11 +38,39 @@
           </a>
         </v-layout>
       </v-flex>
-      <v-flex
-        mb-5
-        xs12
-      >
-        <h2 class="headline font-weight-bold mb-3">3 apps in Vue:</h2>
+      <v-flex mb-5 xs12>
+        <h3 class="headline font-weight-bold mb-3">Spring Boot (Java)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedFullStackJavaProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex mb-5 xs12>
+        <h3 class="headline font-weight-bold mb-3">Node (JS)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedFullStackNodeProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex mb-5 xs12>
+        <h2>And several Front End projects:</h2>
+        <h3 class="headline font-weight-bold mb-3">Vue</h3>
 
         <v-layout justify-center>
           <a
@@ -59,12 +84,8 @@
           </a>
         </v-layout>
       </v-flex>
-      <v-flex
-        mb-5
-        xs12
-      >
-
-      <h2 class="headline font-weight-bold mb-3">Few in React:</h2>
+      <v-flex mb-5 xs12>
+        <h3 class="headline font-weight-bold mb-3">React</h3>
 
         <v-layout justify-center>
           <a
@@ -78,11 +99,8 @@
           </a>
         </v-layout>
       </v-flex>
-      <v-flex
-        mb-5
-        xs12
-      >
-        <h2 class="headline font-weight-bold mb-3">My Vanilla JS games</h2>
+      <v-flex mb-5 xs12>
+        <h2 class="headline font-weight-bold mb-3">My Vanilla JS games:</h2>
 
         <v-layout justify-center>
           <a
@@ -97,10 +115,7 @@
         </v-layout>
       </v-flex>
 
-      <v-flex
-        xs12
-        mb-5
-      >
+      <v-flex xs12 mb-5>
         <h2 class="headline font-weight-bold mb-3">Important Links</h2>
 
         <v-layout justify-center>
@@ -116,7 +131,7 @@
         </v-layout>
       </v-flex>
 
-  <!--     <v-flex
+      <!--     <v-flex
         xs12
         mb-5
       >
@@ -141,76 +156,84 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
 
   data: () => ({
     importantLinks: [
       {
-        text: 'My LinkedIn Account',
-        href: 'https://linkedin.com/in/jonathan-hirshowitz',
+        text: "My LinkedIn Account",
+        href: "https://linkedin.com/in/jonathan-hirshowitz",
       },
       {
-        text: 'My Github Account',
-        href: 'https://github.com/yoniwitz',
-      }
-      ,
+        text: "My Github Account",
+        href: "https://github.com/yoniwitz",
+      },
       {
-        text: 'My Oracle Certified Associate, Java SE8 Programmer',
-        href: 'https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2',
-      }
+        text: "My Oracle Certified Associate, Java SE8 Programmer",
+        href:
+          "https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2",
+      },
     ],
-    completedFullStackProjects: [
+    completedFullStackJavaProjects: [
       {
-        text: 'Das Boot (Spring Boot Java)',
-        href: 'https://yw-das-boot.herokuapp.com/index.html#/',
+        text: "Das Boot (JSP)",
+        href: "https://yw-das-boot.herokuapp.com/index.html#/",
+      },
+    ],
+    completedFullStackNetProjects: [
+      {
+        text: "Simple Bank App (Razor Pages)",
+        href: "https://simplebank.azurewebsites.net/",
       },
       {
-        text: 'Simple Bank App (.Net stack)',
-        href: 'https://ywsimplebank.azurewebsites.net/',
+        text: "Reactivity (React)",
+        href: "https://ywreactivity.azurewebsites.net/",
+      },
+    ],
+    completedFullStackNodeProjects: [
+      {
+        text: "Photos Viewer (Vue)",
+        href: "https://photos-viewer.herokuapp.com/",
       },
       {
-        text: 'Photos Viewer',
-        href: 'https://photos-viewer.herokuapp.com/',
+        text: "Twitter Showcase (React)",
+        href: "https://yw-twitter-showcase.herokuapp.com/",
       },
-      {
-        text: 'Twitter Showcase',
-        href: 'https://yw-twitter-showcase.herokuapp.com/',
-      }
-    ],  
+    ],
     completedVueProjects: [
       {
-        text: 'Yoni\'s Waffles',
-        href: 'https://yonis-waffles.firebaseapp.com/',
+        text: "Yoni's Waffles",
+        href: "https://yonis-waffles.firebaseapp.com/",
       },
       {
-        text: 'Programmers World Wide',
-        href: 'https://ww-programmers.firebaseapp.com/',
+        text: "Programmers World Wide",
+        href: "https://ww-programmers.firebaseapp.com/",
       },
       {
-        text: 'Expense Tracker (deployed on Heroku)',
-        href: 'http://yw-expense-tracker.herokuapp.com/',
+        text: "Expense Tracker (deployed on Heroku)",
+        href: "http://yw-expense-tracker.herokuapp.com/",
       },
-    ],  
+    ],
     completedReactProjects: [
       {
-        text: 'Meme Generator',
-        href: 'https://yoniwitz.github.io/Meme-Generator/',
+        text: "Meme Generator",
+        href: "https://yoniwitz.github.io/Meme-Generator/",
       },
       {
-        text: 'Expense Tracker (deployed on Heroku)',
-        href: 'http://yw-expense-tracker-react.herokuapp.com/',
-      }
-    ],   
+        text: "Expense Tracker (deployed on Heroku)",
+        href: "http://yw-expense-tracker-react.herokuapp.com/",
+      },
+    ],
     completedJSProjects: [
       {
-        text: 'Snake Game',
-        href: 'https://yoniwitz.github.io/JS-Snake/',
+        text: "Snake Game",
+        href: "https://yoniwitz.github.io/JS-Snake/",
       },
       {
-        text: 'Tetris',
-        href: 'https://yoniwitz.github.io/JS-Tetris/',
-      }
-    ]
-  })
+        text: "Tetris",
+        href: "https://yoniwitz.github.io/JS-Tetris/",
+      },
+    ],
+  }),
 };
 </script>
