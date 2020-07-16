@@ -21,9 +21,9 @@
       </v-flex>
       <v-flex mb-5 xs12>
         <h2 class="headline font-weight-bold mb-3">
-          Mobile App:
+          Mobile Apps:
         </h2>
-        <h3 class="headline font-weight-bold mb-3">Native (Android)</h3>
+        <h3 class="headline font-weight-bold mb-3">React Native (Android)</h3>
 
         <v-layout justify-center>
           <a
@@ -77,6 +77,22 @@
         <v-layout justify-center>
           <a
             v-for="(next, i) in completedFullStackNodeProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex mb-5 xs12>
+        <h2>Back End projects:</h2>
+        <h3 class="headline font-weight-bold mb-3">Sprint Boot (Java)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedBackEndJavaProjects"
             :key="i"
             :href="next.href"
             class="subheading mx-4"
@@ -204,6 +220,12 @@ export default {
         href: "https://yw-das-boot.herokuapp.com/index.html#/",
       },
     ],
+    completedBackEndJavaProjects: [
+      {
+        text: "User-APIs (RESTFul)",
+        href: "https://yw-user-apis.herokuapp.com/api/swagger-ui.html#/",
+      },
+    ],
     completedFullStackNetProjects: [
       {
         text: "Simple Bank App (.NET MVC + Razor Pages)",
@@ -261,3 +283,11 @@ export default {
   }),
 };
 </script>
+<style scoped>
+h2{
+  color:rgb(77, 163, 55)
+}
+h3{
+  color:rgb(255, 127, 255)
+}
+</style>
