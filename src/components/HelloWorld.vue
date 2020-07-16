@@ -19,6 +19,24 @@
           posted on my current projects
         </p>
       </v-flex>
+      <v-flex mb-5 xs12>
+        <h2 class="headline font-weight-bold mb-3">
+          Mobile Apps:
+        </h2>
+        <h3 class="headline font-weight-bold mb-3">React Native (Android)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedMobileAppProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
 
       <v-flex mb-5 xs12>
         <h2 class="headline font-weight-bold mb-3">
@@ -59,6 +77,22 @@
         <v-layout justify-center>
           <a
             v-for="(next, i) in completedFullStackNodeProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
+      <v-flex mb-5 xs12>
+        <h2>Back End projects:</h2>
+        <h3 class="headline font-weight-bold mb-3">Spring Boot (Java)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedBackEndJavaProjects"
             :key="i"
             :href="next.href"
             class="subheading mx-4"
@@ -174,20 +208,32 @@ export default {
           "https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2",
       },
     ],
+    completedMobileAppProjects: [
+      {
+        text: "EHand Book (Link to Google Play)",
+        href: "https://play.google.com/store/apps/details?id=com.tccny",
+      },
+    ],
     completedFullStackJavaProjects: [
       {
         text: "Das Boot (JSP)",
         href: "https://yw-das-boot.herokuapp.com/index.html#/",
       },
     ],
+    completedBackEndJavaProjects: [
+      {
+        text: "User-APIs (RESTFul)",
+        href: "https://yw-user-apis.herokuapp.com/api/swagger-ui.html#/",
+      },
+    ],
     completedFullStackNetProjects: [
       {
-        text: "Simple Bank App (Razor Pages)",
-        href: "https://simplebank.azurewebsites.net/",
+        text: "Simple Bank App (.NET MVC + Razor Pages)",
+        href: "https://github.com/YoniWitz/SimpleBank",
       },
       {
-        text: "Reactivity (React)",
-        href: "https://ywreactivity.azurewebsites.net/",
+        text: "Reactivity (.NET Clean Architecture + React)",
+        href: "https://github.com/YoniWitz/Reactivity",
       },
     ],
     completedFullStackNodeProjects: [
@@ -237,3 +283,11 @@ export default {
   }),
 };
 </script>
+<style scoped>
+h2{
+  color:rgb(77, 163, 55)
+}
+h3{
+  color:rgb(255, 127, 255)
+}
+</style>
