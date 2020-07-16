@@ -19,6 +19,24 @@
           posted on my current projects
         </p>
       </v-flex>
+      <v-flex mb-5 xs12>
+        <h2 class="headline font-weight-bold mb-3">
+          Mobile App:
+        </h2>
+        <h3 class="headline font-weight-bold mb-3">Native (Android)</h3>
+
+        <v-layout justify-center>
+          <a
+            v-for="(next, i) in completedMobileAppProjects"
+            :key="i"
+            :href="next.href"
+            class="subheading mx-4"
+            target="_blank"
+          >
+            {{ next.text }}
+          </a>
+        </v-layout>
+      </v-flex>
 
       <v-flex mb-5 xs12>
         <h2 class="headline font-weight-bold mb-3">
@@ -172,6 +190,12 @@ export default {
         text: "My Oracle Certified Associate, Java SE8 Programmer",
         href:
           "https://www.youracclaim.com/badges/aa48e7ef-b267-4327-99e8-0f20bcc527b2",
+      },
+    ],
+    completedMobileAppProjects: [
+      {
+        text: "EHand Book (Link to Google Play)",
+        href: "https://play.google.com/store/apps/details?id=com.tccny",
       },
     ],
     completedFullStackJavaProjects: [
