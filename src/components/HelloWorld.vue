@@ -88,7 +88,7 @@
       </v-flex>
       <v-flex mb-5 xs12>
         <h2>Back End projects:</h2>
-        <h3 class="headline font-weight-bold mb-3">Sprint Boot (Java)</h3>
+        <h3 class="headline font-weight-bold mb-3">Spring Boot (Java)</h3>
 
         <v-layout justify-center>
           <a
