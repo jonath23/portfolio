@@ -182,12 +182,12 @@ export default {
     ],
     completedFullStackNetProjects: [
       {
-        text: "Simple Bank App (Razor Pages)",
-        href: "https://simplebank.azurewebsites.net/",
+        text: "Simple Bank App (.NET MVC + Razor Pages)",
+        href: "https://github.com/YoniWitz/SimpleBank",
       },
       {
-        text: "Reactivity (React)",
-        href: "https://ywreactivity.azurewebsites.net/",
+        text: "Reactivity (.NET Clean Architecture + React)",
+        href: "https://github.com/YoniWitz/Reactivity",
       },
     ],
     completedFullStackNodeProjects: [
